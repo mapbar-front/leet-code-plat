@@ -33,7 +33,7 @@ router.beforeEach((to, from, next) => {
             })
           }
           NProgress.done()
-        }).catch((e) => {
+        }).catch(e => {
           console.log(e)
           NProgress.done()
         })

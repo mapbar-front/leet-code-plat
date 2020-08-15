@@ -41,5 +41,3 @@ export const groupBy = (data, size) => {
 
   return result.list
 }
-
-

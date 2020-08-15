@@ -19,6 +19,12 @@ yarn install
 yarn run serve
 ```
 
+### Compiles and hot-reloads for mock development
+
+```
+npm run mock
+```
+
 ### Compiles and minifies for production
 
 ```

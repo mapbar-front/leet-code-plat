@@ -26,13 +26,11 @@
 
 <script>
 import md5 from 'md5'
-import { validCodeUrl } from '@/api/auth'
 import { PASSPORD_HASH } from '@/constants/password'
 export default {
   data () {
     return {
       submited: false,
-      codeUrl: validCodeUrl(Date.now()),
       sended: false,
       countTimer: null,
       userForm: {
@@ -62,7 +60,7 @@ export default {
 
           this.submited = true
           password = md5(`${password}${PASSPORD_HASH}`)
-          this.$store.dispatch('login', { userName, password, kaptcha }).then((data) => {
+          this.$store.dispatch('login', { userName, password, kaptcha }).then(data => {
             this.submited = false
             this.$router.push({ path: '/' })
           }).catch(() => {

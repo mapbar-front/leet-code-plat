@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     setActiveRoute () {
-      this.activeRoute = this.fullPathList[this.fullPathList.length -1]
+      this.activeRoute = this.fullPathList[this.fullPathList.length - 1]
     },
     handleClose (fullPath) {
       this.pages = this.pages.filter(item => item.fullPath !== fullPath)
@@ -60,18 +60,23 @@ export default {
 
 <style lang="scss">
   @import "../../assets/scss/common/var.scss";
+
   .wypro-multi-tab {
     margin-top: 10px;
     padding-left: 20px;
     border-bottom: 1px solid $--border-color-light;
+
     .el-tabs {
       position: relative;
       bottom: -1px;
+
       &__header {
         margin: 0;
       }
+
       &__item {
         background: #fafafa;
+
         &.is-active {
           background: #fff;
         }

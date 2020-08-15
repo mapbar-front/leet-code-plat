@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from '@/views/index/Home.vue'
 
 const originalPush = Router.prototype.push
 Router.prototype.push = function push (location) {
@@ -7,6 +8,21 @@ Router.prototype.push = function push (location) {
 }
 
 const baseRoutes = [
+  {
+    path: '/',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '/parser',
+    name: 'parser',
+    component: () => import(/* webpackChunkName: "parser-example" */'@/components/parser/example/Index.vue')
+  },
+  {
+    path: '/tinymce',
+    name: 'tinymce',
+    component: () => import(/* webpackChunkName: "tinymce-example" */'@/components/tinymce/example/Index.vue')
+  },
   {
     path: '/login',
     name: 'login',
