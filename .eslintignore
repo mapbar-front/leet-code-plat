@@ -4,6 +4,7 @@ dist
 test
 node_modules/
 static
+vue.config.js
 .*
 **/*.min.*
 **/*.css

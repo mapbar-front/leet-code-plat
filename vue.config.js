@@ -1,8 +1,8 @@
-// const webpack = require('webpack')
+const webpack = require('webpack')
 const path = require('path')
-// const plugins = [
-//   new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh-cn/)
-// ]
+const plugins = [
+  new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /zh-cn/)
+]
 const minify = process.env.NODE_ENV === 'development' ? false : {
   collapseWhitespace: true,
   removeComments: true,
@@ -20,7 +20,7 @@ function resolve (dir) {
 module.exports = {
   lintOnSave: true,
   configureWebpack: {
-    // plugins,
+    plugins,
     externals: {
       vue: 'Vue',
       'vue-router': 'VueRouter',
