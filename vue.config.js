@@ -28,7 +28,7 @@ module.exports = {
       'element-ui': 'ELEMENT'
     }
   },
-  publicPath: '/lowcode/',
+  publicPath: process.env.NODE_ENV === "production" ? '/lowcode/' : '/',
   pages: {
     index: {
       entry: 'src/views/index/main.js',
