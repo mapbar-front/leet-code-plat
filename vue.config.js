@@ -28,9 +28,7 @@ module.exports = {
       'element-ui': 'ELEMENT'
     }
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/form-generator/'
-    : '/',
+  publicPath: '/lowcode/',
   pages: {
     index: {
       entry: 'src/views/index/main.js',
