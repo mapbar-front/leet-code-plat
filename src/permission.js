@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import router from './router'
 import store from './store'
+import './utils/vab.js'
 
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'

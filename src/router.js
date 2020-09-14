@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/index/Home.vue'
+import CodeGenerator from '@/views/codeGenerator/index.vue'
 
 // const originalPush = Router.prototype.push
 // Router.prototype.push = function push (location) {
@@ -12,6 +13,11 @@ const baseRoutes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/codeGenerator',
+    name: 'codeGenerator',
+    component: CodeGenerator
   },
   {
     path: '/parser',

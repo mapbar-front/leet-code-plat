@@ -239,6 +239,7 @@ export default {
     }
   },
   mounted () {
+    console.log(this.$store)
     if (Array.isArray(drawingListInDB) && drawingListInDB.length > 0) {
       this.drawingList = drawingListInDB
     } else {
