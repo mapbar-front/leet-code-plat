@@ -41,9 +41,9 @@
     "*.{js,jsx,vue}": [
       "eslint --fix",
       "stylelint --fix",
-      "git add ."
+      "git add"
     ],
-    "*.{css,less,scss}": [
+    "src/*.{css,less,scss}": [
       "stylelint --fix",
       "git add"
     ]
